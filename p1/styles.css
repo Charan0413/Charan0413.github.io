@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color:  lightblue;
+    color: brown;
+}
+
+li{
+    display:inline-block;
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: none;
+}
