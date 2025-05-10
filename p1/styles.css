@@ -1,14 +1,17 @@
 *{
     margin: 0;
-    text-decoration: none;
 }
 header{
     display: flex;
     justify-content: space-between;
-    background-color:  rgb(97, 205, 227);
+    background-color: rgb(93, 169, 244);
     color: rgb(0, 0, 0);
-    font-family: 'Times New Roman', Times, serif;
     padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header a{
+    text-decoration: none;
 }
 
 li{
@@ -22,6 +25,7 @@ li{
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px;
+    background-color: rgb(169, 213, 230);
 }
 
 .box {
@@ -29,21 +33,50 @@ li{
     padding: 30px;
 }
 .text{
-    margin-top: 20px;
+    border-color: #0043b8;
    
 }
 .Heading{
     color:	#0043b8;
-    font-weight: 700;
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .button{
     margin-top: 10px;
     padding: 10px;
-    width: 100px;
     border-radius: 5px;
     background-color: rgb(93, 169, 244);
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    border-style: none;
 }
 .image{
     border-radius: 50px;
     background-color: black;
+}
+.row1{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;  
+}
+.title{
+   text-align: center;
+   color:	#0043b8;
+   font-weight: 1000;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 30px;
+}
+.box1{
+    text-align: center;
+    width: 200px;
+    height: auto;
+    color: white;
+    border-width: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(16, 118, 162);
+}
+.projects{
+    background-color: rgb(79, 172, 200);
 }
