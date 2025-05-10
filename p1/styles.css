@@ -5,13 +5,45 @@
 header{
     display: flex;
     justify-content: space-between;
-    background-color:  lightblue;
-    color: brown;
+    background-color:  rgb(97, 205, 227);
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
 }
 
 li{
     display:inline-block;
-    font-size: 20px;
+    font-size: 22px;
     padding: 5px;
     text-decoration: none;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.box {
+    width: 500px;
+    padding: 30px;
+}
+.text{
+    margin-top: 20px;
+   
+}
+.Heading{
+    color:	#0043b8;
+    font-weight: 700;
+}
+.button{
+    margin-top: 10px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgb(93, 169, 244);
+}
+.image{
+    border-radius: 50px;
+    background-color: black;
 }
