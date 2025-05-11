@@ -8,6 +8,8 @@ header{
     color: rgb(0, 0, 0);
     padding: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed;
+    width: 1455px;
 }
 
 header a{
@@ -31,6 +33,7 @@ li{
 .box {
     width: 500px;
     padding: 30px;
+    margin-top: 30px;
 }
 .text{
     border-color: #0043b8;
@@ -50,6 +53,7 @@ li{
     font-weight: 800;
     font-size: 18px;
     border-style: none;
+    transition: 0.5s;
 }
 .image{
     border-radius: 50px;
@@ -76,7 +80,124 @@ li{
     padding: 10px;
     border-radius: 10px;
     background-color: rgb(16, 118, 162);
+    margin-top: 80px;
+    transition: 0.5s;
 }
 .projects{
     background-color: rgb(79, 172, 200);
+    height: 400px;
 }
+.box1:hover{
+    border-color: black;
+    border-width: 10px;
+    transform: scale(1.1,1.1);
+}
+.button1{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(93, 169, 244);
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    border-style: none;
+}
+.button:hover{
+    transform: scale(1.1,1.1);
+}
+.services, .about, .contact {
+    background-color: rgb(169, 213, 230);
+    padding: 40px 20px;
+}
+
+.contact ul li, .contact ul li a {
+    font-size: 18px;
+    color: #0043b8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about img {
+    border-radius: 20px;
+}
+
+.services .box1, .about .box, .contact .box {
+    margin-top: 20px;
+}
+.about{
+background-color: rgb(79, 172, 200);
+}
+.box2{
+     text-align: center;
+    width: 300px;
+    height: auto;
+    color: white;
+    border-width: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(16, 118, 162);
+    margin-top: 80px;
+    transition: 0.5s;
+}
+.box2:hover{
+    transform: scale(1.1,1.1);
+}
+.footer {
+    background-color: rgb(93, 169, 244);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.footer a {
+    color: #0043b8;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.row2{
+    display: flex;
+    justify-content: space-between;
+}
+.skills-heading {
+    font-size: 24px;
+    margin-top: 30px;
+    color: #0043b8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.skills-bar {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.bar {
+    background-color: #d0e7f9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.fill {
+    height: 20px;
+    background-color: #0043b8;
+    color: white;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 20px;
+    border-radius: 10px 0 0 10px;
+}
+
+/* Customize skill widths */
+.html   { width: 95%; }
+.css    { width: 90%; }
+.js     { width: 85%; }
+.react  { width: 80%; }
+.node   { width: 75%; }
+.mongo  { width: 70%; }
