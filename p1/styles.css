@@ -1,198 +1,218 @@
-*{
-    margin: 0;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(93, 169, 244);
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header a{
-    text-decoration: none;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
-li{
-    display:inline-block;
-    font-size: 22px;
-    padding: 5px;
-    text-decoration: none;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(93, 169, 244);
+  color: black;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
+
+header ul {
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+header a:hover {
+  color: white;
+}
+
+li {
+  display: inline-block;
+}
+
 .row {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-    background-color: rgb(169, 213, 230);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: rgb(169, 213, 230);
 }
 
 .box {
-    width: 500px;
-    padding: 30px;
-    margin-top: 30px;
+  width: 500px;
+  padding: 30px;
+  margin-top: 30px;
 }
-.text{
-    border-color: #0043b8;
-   
+
+.text {
+  border-color: #0043b8;
 }
-.Heading{
-    color:	#0043b8;
-    font-weight: 1000;
-    font-family: Arial, Helvetica, sans-serif;
+
+.Heading {
+  color: #0043b8;
+  font-weight: 1000;
 }
-.button{
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: rgb(93, 169, 244);
-    color: white;
-    font-weight: 800;
-    font-size: 18px;
-    border-style: none;
-    transition: 0.5s;
+
+.button {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(93, 169, 244);
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
 }
-.image{
-    border-radius: 50px;
-    background-color: black;
+
+.button:hover {
+  transform: scale(1.1);
 }
-.row1{
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;  
+
+.image {
+  border-radius: 50px;
+  background-color: black;
 }
-.title{
-   text-align: center;
-   color:	#0043b8;
-   font-weight: 1000;
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 30px;
+
+.row1 {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
 }
-.box1{
-    text-align: center;
-    width: 200px;
-    height: auto;
-    color: white;
-    border-width: 40px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(16, 118, 162);
-    margin-top: 80px;
-    transition: 0.5s;
+
+.title {
+  text-align: center;
+  color: #0043b8;
+  font-weight: 1000;
+  font-size: 30px;
 }
-.projects{
-    background-color: rgb(79, 172, 200);
-    height: 400px;
+
+.box1 {
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(16, 118, 162);
+  color: white;
+  margin-top: 80px;
+  transition: 0.5s;
 }
-.box1:hover{
-    border-color: black;
-    border-width: 10px;
-    transform: scale(1.1,1.1);
+
+.projects {
+  background-color: rgb(79, 172, 200);
+  padding: 40px 0;
 }
-.button1{
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: rgb(93, 169, 244);
-    color: white;
-    font-weight: 800;
-    font-size: 18px;
-    border-style: none;
+
+.box1:hover {
+  transform: scale(1.1);
+  border-color: black;
 }
-.button:hover{
-    transform: scale(1.1,1.1);
+
+.button1 {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(93, 169, 244);
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
 }
+
 .services, .about, .contact {
-    background-color: rgb(169, 213, 230);
-    padding: 40px 20px;
+  background-color: rgb(169, 213, 230);
+  padding: 40px 20px;
 }
 
 .contact ul li, .contact ul li a {
-    font-size: 18px;
-    color: #0043b8;
-    font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #0043b8;
 }
 
-.about img {
-    border-radius: 20px;
+.about {
+  background-color: rgb(79, 172, 200);
 }
 
-.services .box1, .about .box, .contact .box {
-    margin-top: 20px;
+.box2 {
+  text-align: center;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(16, 118, 162);
+  color: white;
+  margin-top: 80px;
+  transition: 0.5s;
 }
-.about{
-background-color: rgb(79, 172, 200);
+
+.box2:hover {
+  transform: scale(1.1);
 }
-.box2{
-     text-align: center;
-    width: 300px;
-    height: auto;
-    color: white;
-    border-width: 40px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(16, 118, 162);
-    margin-top: 80px;
-    transition: 0.5s;
-}
-.box2:hover{
-    transform: scale(1.1,1.1);
-}
+
 .footer {
-    background-color: rgb(93, 169, 244);
-    color: black;
-    text-align: center;
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-   
+  background-color: rgb(93, 169, 244);
+  color: black;
+  text-align: center;
+  padding: 20px;
 }
 
 .footer a {
-    color: #0043b8;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 5px;
+  color: #0043b8;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 5px;
 }
 
 .footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.row2{
-    display: flex;
-    justify-content: space-between;
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+
 .skills-heading {
-    font-size: 24px;
-    margin-top: 30px;
-    color: #0043b8;
-    font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  margin-top: 30px;
+  color: #0043b8;
 }
 
 .skills-bar {
-    margin-top: 20px;
-    width: 100%;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .bar {
-    background-color: #d0e7f9;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 15px;
+  background-color: #d0e7f9;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
 }
 
 .fill {
-    height: 20px;
-    background-color: #0043b8;
-    color: white;
-    text-align: right;
-    padding-right: 10px;
-    line-height: 20px;
-    border-radius: 10px 0 0 10px;
+  height: 20px;
+  background-color: #0043b8;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 20px;
+  border-radius: 10px 0 0 10px;
 }
-
-/* Customize skill widths */
 .html   { width: 95%; }
 .css    { width: 90%; }
 .js     { width: 85%; }
