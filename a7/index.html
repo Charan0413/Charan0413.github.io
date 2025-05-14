@@ -1,23 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html>
+  <head>
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-  <div class="login">
-    <h2 style="color: cadetblue;">Calc..</h2>
-    <input type="number" id="n1" placeholder="Enter 1st number">
-    <input type="number" id="n2" placeholder="Enter 2nd number">
-    <button onclick="getresult()">Submit</button>
- 
-  </div>
-  <div id="output"></div>
-</div>
+        <div class="calculator">
+      <h2>Basic Calculator</h2>
+      <input type="number" id="num1" placeholder="Enter number 1" />
+      <input type="number" id="num2" placeholder="Enter number 2" />
+      <button onclick="handleSubmit()">Submit</button>
+
+      
     </div>
+    <div id="result"></div>
+    </div>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -1,26 +1,30 @@
-let resultHTML = ''; 
-
-const addition = (a, b) => a + b;
-const subtraction = (a, b) => a - b;
-const multiplication = (a, b) => a * b;
-const division = (a, b) => a / b;
-
-const getresult = () => {
-  const n1 = parseFloat(document.getElementById('n1').value);
-  const n2 = parseFloat(document.getElementById('n2').value);
-
-   resultHTML = `
-      Addition: ${addition(n1, n2)}<br>
-      Subtraction: ${subtraction(n1, n2)}<br>
-      Multiplication: ${multiplication(n1, n2)}<br>
-      Division: ${division(n1, n2)}
-    `;
-  
-
-  document.getElementById('output').innerHTML = '';
+const getValues = () => {
+  const num1 = parseFloat(document.getElementById("num1").value);
+  const num2 = parseFloat(document.getElementById("num2").value);
+  return { num1, num2 };
 };
 
-const dispResult = () => {
-  document.getElementById('output').innerHTML = resultHTML;
+const calculateResults = ({ num1, num2 }) => {
+  return {
+    addition: num1 + num2,
+    subtraction: num1 - num2,
+    multiplication: num1 * num2,
+    division: num2 !== 0 ? (num1 / num2).toFixed(2) : "Cannot divide by zero"
+  };
 };
 
+const displayResults = (results) => {
+  const resultDiv = document.getElementById("result");
+  resultDiv.innerHTML = `
+    <p>Addition: ${results.addition}</p>
+    <p>Subtraction: ${results.subtraction}</p>
+    <p>Multiplication: ${results.multiplication}</p>
+    <p>Division: ${results.division}</p>
+  `;
+};
+
+const handleSubmit = () => {
+  const values = getValues();
+  const results = calculateResults(values);
+  displayResults(results);
+};
