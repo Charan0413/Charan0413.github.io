@@ -4,41 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <form action="">
-        <input type="text" placeholder="Firstname">
-        <input type="text" placeholder="Surname"> <br>
-        <p>Date of birth</p>
-        <select>
-            <option value="">day</option>
-            <option value="">1</option>            
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4</option>
-        </select>
-        <select>
-            <option value="">month</option>
-            <option value="">1</option>            
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4</option>
-        </select>
-        <select>
-            <option value="">Year</option>
-            <option value="">2000</option>            
-            <option value="">2001</option>
-            <option value="">2003</option>
-            <option value="">2004</option>
-        </select> <br>
-        <p>Gender</p>
-        <label for="">Male</label>
-        <input type="radio">
-        <label for="">female</label>
-        <input type="radio"><br><br>
-        <input type="email" name="" id="" placeholder="Enter email"><br><br>
-        <input type="password" pattern="{0-9}" placeholder="Enter password"><br><br>
-        <button>Signup</button>
-    </form>
+    <div id="d1">
+        <h1>facebook</h1>
+    </div>
+
+    <div id="p1">
+        <div class="container">
+            <h2>Create a new account</h2>
+            <h6 style="color: gray;">It's quick and easy.</h6>
+            <hr>
+            <form>
+                <p><input type="text" placeholder="First Name">
+                <input type="text" placeholder="Surname"></p>
+                <h4><div class="dob-container">
+  <label for="dob-day" style="color: gray;">Date of birth ? 
+  </label>
+  <div class="select-group">
+    <select id="dob-day"></select>
+    <select id="dob-month"></select>
+    <select id="dob-year"></select>
+  </div>
+
+                <h4 style="color: gray;">Gender?</h4>
+                <div class="gender-type">
+                    <label class="gender-box"><input type="radio" name="gender" class="gender">Male</label>
+                    <label class="gender-box"><input type="radio" name="gender" class="gender">Female</label>
+                                <label class="gender-box"><input type="radio" name="gender">Custom</label>
+                </div>
+            <p><input type="number" class="email" placeholder="Mobile Number or email address"></p>
+            <p><input type="password" class="password" placeholder="Password"></p>
+            <p>
+                <h5 style="color: gray;">
+                    <p>People who use our service may have uploaded your contact information to Facebook.Learn more.</p>
+        By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.
+                </h5>
+            </p>
+            <button><strong>Sign Up</strong></button> <br><br>
+            <a href="">Already have an account?</a>
+            </form>
+        </div>
+    </div>
+     <script src="script.js"></script>
 </body>
 </html>
