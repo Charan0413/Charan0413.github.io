@@ -3,137 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sricharan | MERN Developer</title>
+  <title>Sricharan | Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Sricharan</h1>
+  <header class="header">
+    <div class="container nav">
+      <h1 class="logo">Sricharan</h1>
       <nav>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#services">Services</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-    </header>
-
-    <main>
-      <section class="home" id="home">
-        <div class="row">
-          <div class="box">
-            <h1 class="Heading">MERN Stack Developer</h1>
-            <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, sapiente. Distinctio neque temporibus iure aperiam error aliquid tenetur, nesciunt accusamus repudiandae iste quod, modi consequuntur laboriosam. Tempora illo amet voluptatum.
-            </p>
-            <p><button class="button">Know more</button></p>
-          </div>
-          <div class="box">
-            <img src="body.png" width="400px" class="image" alt="Author's Image" />
-          </div>
-        </div>
-      </section>
-
-      <section class="projects" id="projects">
-        <h1 class="title">Projects</h1>
-        <div class="row1">
-          <div class="box1">
-            <h1>Foodmart</h1>
-            <p style="color: black;">Lorem ipsum dolor sit amet consectetur.</p>
-            <p><a href="foodmart.html"><button class="button1">View Demo</button></a></p>
-          </div>
-          <div class="box1">
-            <h1>Cart</h1>
-            <p style="color: black;">Lorem ipsum dolor sit amet consectetur.</p>
-            <p><a href="cart.html"><button class="button1">View Demo</button></a></p>
-          </div>
-          <div class="box1">
-            <h1>Project 3</h1>
-            <p style="color: black;">Lorem ipsum dolor sit amet consectetur.</p>
-            <p><button class="button1">View Demo</button></p>
-          </div>
-          <div class="box1">
-            <h1>My Online Shop</h1>
-            <p><button class="button1"><a href="https://gcet-react-app-fawn.vercel.app/">View Demo</a></button></p>
-          </div>
-        </div>
-      </section>
-
-      <section class="services" id="services">
-        <h1 class="title">Services</h1>
-        <div class="row1">
-          <div class="box1">
-            <h1>Web Development</h1>
-            <p style="color: black;">Full-stack web applications using MERN stack.</p>
-          </div>
-          <div class="box1">
-            <h1>UI/UX Design</h1>
-            <p style="color: black;">Responsive and user-friendly interface design.</p>
-          </div>
-          <div class="box1">
-            <h1>Consulting</h1>
-            <p style="color: black;">Project planning and architecture guidance.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="about" id="about">
-        <h1 class="title">About Me</h1>
-        <div class="row2">
-          <div class="box3" style="width: 100%;">
-            <p class="text">
-              Hi, I'm Sricharan, a passionate MERN Stack Developer with a knack for creating seamless and dynamic web experiences. I enjoy solving problems and building products that make a difference.
-            </p>
-            <h2 class="skills-heading">Technical Skills</h2>
-            <div class="skills-bar">
-              <p>HTML</p>
-              <div class="bar"><div class="fill html">95%</div></div>
-              <p>CSS</p>
-              <div class="bar"><div class="fill css">90%</div></div>
-              <p>JavaScript</p>
-              <div class="bar"><div class="fill js">85%</div></div>
-              <p>React</p>
-              <div class="bar"><div class="fill react">80%</div></div>
-              <p>Node.js</p>
-              <div class="bar"><div class="fill node">75%</div></div>
-              <p>MongoDB</p>
-              <div class="bar"><div class="fill mongo">70%</div></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-<section class="contact" id="contact">
-  <h1 class="title">Contact</h1>
-  <div class="contact-container">
-    <div class="contact-box">
-      <p class="text">Feel free to reach out for collaborations or just to say hello!</p>
-      <ul class="contact-info">
-        <li><strong>Email:</strong> <a href="mailto:sricharan@example.com">sricharan@example.com</a></li>
-        <li><strong>Phone:</strong> <a href="tel:+1234567890">+123 456 7890</a></li>
-        <li><strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/sricharan</a></li>
-        <li><strong>GitHub:</strong> <a href="#" target="_blank">github.com/sricharan</a></li>
-      </ul>
-      <button class="contact-button">Let's Connect</button>
     </div>
-  </div>
-</section>
+  </header>
 
-    </main>
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <div>
+        <h2>Hello, I'm Sricharan</h2>
+        <p>A Full Stack Developer building fast, modern web applications using the MERN stack.</p>
+        <a href="#projects" class="btn">See My Work</a>
+      
+  </section>
 
-    <footer class="footer">
-      <div class="footer-content">
-        <p>&copy; 2025 Sricharan. All rights reserved.</p>
-        <p>Follow me on:
-          <a href=>LinkedIn</a> |
-          <a href=>GitHub</a> |
-          <a href=>Twitter</a>
-        </p>
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Foodmart</h3>
+         
+          <a href="foodmart.html" class="btn-sm">View Demo</a>
+        </div>
+        <div class="project-card">
+          <h3>Cart App</h3>
+         
+          <a href="cart.html" class="btn-sm">View Demo</a>
+        </div>
+        <div class="project-card">
+          <h3>ATM Bank</h3>
+
+          <a href="/bank-atm/" class="btn-sm" target="_blank">View Live</a>
+        </div>
+        <div class="project-card">
+          <h3>Online Shop</h3>
+         
+          <a href="https://gcet-react-app-fawn.vercel.app/" class="btn-sm" target="_blank">View Live</a>
+        </div>
       </div>
-    </footer>
-  </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I'm a MERN Stack Developer with a passion for building scalable and interactive web apps. 
+        I focus on writing clean, efficient code and crafting smooth user experiences. 
+        I’m always learning and love collaborating on impactful projects.
+      </p>
+      <div class="skills">
+        <h3>Skills</h3>
+        <ul>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>MongoDB</li>
+          <li>JavaScript (ES6+)</li>
+          <li>HTML & CSS</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p>If you'd like to work together or just say hello, feel free to reach out!</p>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:sricharan@example.com">sricharan@example.com</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/sricharan" target="_blank">linkedin.com/in/sricharan</a></li>
+        <li>GitHub: <a href="https://github.com/sricharan" target="_blank">github.com/sricharan</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Sricharan. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
